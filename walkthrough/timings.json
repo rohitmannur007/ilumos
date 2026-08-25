@@ -1,0 +1,83 @@
+{
+ "segments": [
+  {
+   "i": 0,
+   "start": 0.5,
+   "duration": 8.81,
+   "text": "This is iLumos, claim review intelligence. A claim chart isn"
+  },
+  {
+   "i": 1,
+   "start": 10.01,
+   "duration": 5.95,
+   "text": "One click loads the demo chart and four fictional Acme docum"
+  },
+  {
+   "i": 2,
+   "start": 16.66,
+   "duration": 6.46,
+   "text": "Ten claim elements. Review readiness is computed live: eight"
+  },
+  {
+   "i": 3,
+   "start": 23.82,
+   "duration": 5.54,
+   "text": "Element three has an evidence gap. It claims machine learnin"
+  },
+  {
+   "i": 4,
+   "start": 30.06,
+   "duration": 9.5,
+   "text": "I'll ask the assistant to strengthen the reasoning. It revie"
+  },
+  {
+   "i": 5,
+   "start": 40.26,
+   "duration": 9.26,
+   "text": "The answer is structured: finding, evidence, interpretation,"
+  },
+  {
+   "i": 6,
+   "start": 50.23,
+   "duration": 6.77,
+   "text": "Before anything changes, I preview the impact. High impact: "
+  },
+  {
+   "i": 7,
+   "start": 57.7,
+   "duration": 8.83,
+   "text": "Here's exactly why element seven is affected: shared concept"
+  },
+  {
+   "i": 8,
+   "start": 67.23,
+   "duration": 5.88,
+   "text": "Applying the change. Elements seven and nine are flagged for"
+  },
+  {
+   "i": 9,
+   "start": 73.81,
+   "duration": 9.22,
+   "text": "Chart review shows the dependency side by side. I accept wit"
+  },
+  {
+   "i": 10,
+   "start": 83.72,
+   "duration": 9.34,
+   "text": "The supervisor gets a read-only review center, and a decisio"
+  },
+  {
+   "i": 11,
+   "start": 93.76,
+   "duration": 7.46,
+   "text": "The analyst can return to case setup at any time. Nothing is"
+  },
+  {
+   "i": 12,
+   "start": 101.92,
+   "duration": 9.86,
+   "text": "Export produces a real Word document with the final chart, e"
+  }
+ ],
+ "total": 113.29
+}

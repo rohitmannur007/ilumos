@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+@layer base {
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 0 0% 3.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 0 0% 3.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 0 0% 3.9%;
+        --primary: 0 0% 9%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 0 0% 96.1%;
+        --secondary-foreground: 0 0% 9%;
+        --muted: 0 0% 96.1%;
+        --muted-foreground: 0 0% 45.1%;
+        --accent: 0 0% 96.1%;
+        --accent-foreground: 0 0% 9%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 89.8%;
+        --input: 0 0% 89.8%;
+        --ring: 0 0% 3.9%;
+        --radius: 0.5rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+    [data-debug-wrapper="true"] > * {
+        margin-left: inherit;
+        margin-right: inherit;
+        margin-top: inherit;
+        margin-bottom: inherit;
+        padding-left: inherit;
+        padding-right: inherit;
+        padding-top: inherit;
+        padding-bottom: inherit;
+        column-gap: inherit;
+        row-gap: inherit;
+        gap: inherit;
+        border-left-width: inherit;
+        border-right-width: inherit;
+        border-top-width: inherit;
+        border-bottom-width: inherit;
+        border-left-style: inherit;
+        border-right-style: inherit;
+        border-left-color: inherit;
+        border-right-color: inherit;
+        border-top-color: inherit;
+        border-bottom-color: inherit;
+    }
+}
+
+/* iLumos animation utilities — subtle, state-communicating only */
+@keyframes ilumos-fade-up {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes ilumos-fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes ilumos-edge-draw {
+    from { stroke-dashoffset: 320; }
+    to { stroke-dashoffset: 0; }
+}
+@keyframes ilumos-node-in {
+    from { opacity: 0; transform: translateY(6px) scale(0.97); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes ilumos-typing {
+    0%, 60%, 100% { transform: translateY(0); opacity: 0.45; }
+    30% { transform: translateY(-3px); opacity: 1; }
+}
+@keyframes ilumos-progress {
+    from { width: 8%; }
+    to { width: 100%; }
+}
+@keyframes ilumos-pulse-soft {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.55; }
+}
+
+.anim-fade-up { animation: ilumos-fade-up 0.35s ease-out both; }
+.anim-fade-in { animation: ilumos-fade-in 0.3s ease-out both; }
+.anim-node { animation: ilumos-node-in 0.45s ease-out both; }
+.anim-edge { stroke-dasharray: 320; stroke-dashoffset: 320; animation: ilumos-edge-draw 0.7s ease-out forwards; }
+.anim-pulse-soft { animation: ilumos-pulse-soft 1.6s ease-in-out infinite; }
+
+.typing-dot { animation: ilumos-typing 1.1s ease-in-out infinite; }
+.typing-dot:nth-child(2) { animation-delay: 0.15s; }
+.typing-dot:nth-child(3) { animation-delay: 0.3s; }
+
+.ilumos-scroll::-webkit-scrollbar { width: 6px; height: 6px; }
+.ilumos-scroll::-webkit-scrollbar-track { background: transparent; }
+.ilumos-scroll::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+.ilumos-scroll::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+button:focus-visible, a:focus-visible, [tabindex]:focus-visible, textarea:focus-visible, input:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
